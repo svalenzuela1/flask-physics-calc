@@ -7,5 +7,18 @@
 </head>
 
 <body>
+<div>
+<h3> Enter Celsius Temperature to Convert to Fahrenheit</h3>
+    <form method="POST" action="/">
+        Celsius Temperature <br>
+        <input type="text" name="c_temp">
+        <button type="submit" value="submit">Submit</button>
 
+    </form>
+</div>
+<div>
+    {% if celsius %}
+        <p> It is {{ celsius }} Degrees Fahrenheit</p>
+    {% endif %}
+</div>
 </body>
