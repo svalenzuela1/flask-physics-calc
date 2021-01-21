@@ -7,15 +7,14 @@
 </head>
 
 <body>
-<button> <a href={{ url_for('celsius_converter') }}>Link</a></button>
+<!-- <button> <a href=>Link</a></button> -->
+<div>
 <div>
 <h3> Enter Celsius Temperature to Convert to Fahrenheit</h3>
     <form method="POST" action="/">
         Celsius Temperature <br>
         <input type="text" name="c_temp">
         <button type="submit" value="submit">Submit</button>
-
-
     </form>
 
 </div>
@@ -25,6 +24,25 @@
         <p> It is {{ celsius }} Degrees Fahrenheit</p>
     {% endif %}
 </div>
+</div>
+<!--Separate divs-->
+<div>
 
+<div>
+    <form method="POST" action="/">
+        <h3> Enter Celsius Temperature to Convert to Fahrenheit</h3>
+        Celsius Temperature <br>
+        <input type="text" name="f_temp">
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</div>
 
+<div>
+    {% if fahrenheit %}
+        <p> It is {{ fahrenheit }} Degrees Fahrenheit</p>
+    {% endif %}
+
+</div>
+
+</div>
 </body>
