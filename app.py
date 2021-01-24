@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/celsius', methods=['GET', 'POST'])
 
 def fahrenheit_converter():
     c_temp = ''
