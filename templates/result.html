@@ -4,22 +4,30 @@
     <title>Physics Project</title>
 
     <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
 </head>
 
 <body>
+<div class="routed">
+<button class="nav"> <a href={{ url_for('fahrenheit_converter') }}>Link</a></button>
+</div>
 
-<button> <a href={{ url_for('fahrenheit_converter') }}>Link</a></button>
-
-
-<div>
+<div class="second">
 
 <div>
 
     <form method="POST" action="/fahrenheit">
-        <h3> Enter Fahrenheit Temperature to Convert to Celsius</h3>
+        <h3 class="heading"> Enter Fahrenheit Temperature to Convert to Celsius</h3>
         Fahrenheit Temperature <br>
-        <input type="text" name="f_temp">
-        <button type="submit" value="submit">Submit</button>
+
+        <div class="form2">
+
+
+        <input class="f_temp" type="text" name="f_temp" placeholder="Temperature" />
+        <button class="button" type="submit" value="submit">Submit</button>
+
+
+          </div>
     </form>
 </div>
 

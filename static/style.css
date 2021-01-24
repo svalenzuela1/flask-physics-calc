@@ -1,3 +1,37 @@
 a{
     text-decoration: none;
 }
+
+.first, .second{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.routed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*.form2{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*   */
+/*}*/
+
+/*Fahrenheit*/
+.f_temp{
+    width: 200px;
+    border: 2px solid black;
+}
+
+.button{
+    background-color: black;
+    color: darkorange;
+}
+
+/*End of Fahrenheit*/
