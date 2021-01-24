@@ -9,7 +9,7 @@
 
 <body>
 <div class="routed">
-<button class="nav"> <a href={{ url_for('fahrenheit_converter') }}>Link</a></button>
+<button class="nav"> <a href={{ url_for('fahrenheit_converter') }}>Celsius</a></button>
 </div>
 
 <div class="second">
@@ -31,7 +31,7 @@
     </form>
 </div>
 
-<div>
+<div class="result">
     {% if celsius %}
 
         <p> It is {{ celsius }} Degrees Celsius</p>

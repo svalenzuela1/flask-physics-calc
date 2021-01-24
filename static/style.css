@@ -1,5 +1,9 @@
+html{
+    background-color: black;
+}
 a{
     text-decoration: none;
+    color: darkorange;
 }
 
 .first, .second{
@@ -16,22 +20,37 @@ a{
     text-align: center;
 }
 
-/*.form2{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    flex-direction: column;*/
-/*   */
-/*}*/
-
-/*Fahrenheit*/
+.nav{
+    background-color: inherit;
+    color: darkorange;
+    font-size: 30px;
+}
 .f_temp{
-    width: 200px;
-    border: 2px solid black;
+    width: 100px;
+    border: 2px solid darkorange;
 }
 
 .button{
     background-color: black;
     color: darkorange;
+}
+
+.button:hover{
+    background-color: darkorange;
+    color: black;
+    animation: running;
+}
+
+h3{
+    background-color: darkorange;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.result{
+    color: darkorange;
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 /*End of Fahrenheit*/
