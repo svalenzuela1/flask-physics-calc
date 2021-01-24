@@ -10,8 +10,7 @@ def fahrenheit_converter():
     fahrenheit = ''
     if request.method == 'POST' and 'c_temp' in request.form:
         c_temp = int(request.form.get('c_temp'))
-        fahrenheit = round((c_temp - 32) * 5/9)
-        print('the prblem is python')
+        fahrenheit = round(c_temp * (9/5) + 32)
 
     # elif request.method == 'POST' and ValueError:
     #     return '<h1>Please Enter Integer Value</h1>'
@@ -28,7 +27,6 @@ def celsius_converter():
     if request.method == 'POST' and 'f_temp' in request.form:
         f_temp = int(request.form.get('f_temp'))
         celsius = round((f_temp - 32) * 5 / 9)
-    print('the problem is html')
 
     return render_template('result.html', celsius=celsius)
 
