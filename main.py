@@ -29,5 +29,3 @@ def celsius_converter():
         celsius = round((f_temp - 32) * 5 / 9)
 
     return render_template('result.html', celsius=celsius)
-
-app.run()
