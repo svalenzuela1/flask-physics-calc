@@ -30,3 +30,4 @@ def celsius_converter():
 
     return render_template('result.html', celsius=celsius)
 
+app.run()
