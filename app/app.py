@@ -30,7 +30,3 @@ def celsius_converter():
 
     return render_template('result.html', celsius=celsius)
 
-
-if __name__ == "__main__":
-    app.run(debug=True)
-
