@@ -2,9 +2,8 @@ html{
     background-color: grey;
 }
 
-
 /*Home HTML CSS*/
-.heading{
+.homeHeading{
     text-align: center;
     padding-top: 5%;
 }
@@ -74,7 +73,7 @@ html{
 /*END OF HOME CSS*/
 a{
     text-decoration: none;
-    color: darkorange;
+    /*color: darkorange;*/
 }
 
 .first, .second{
@@ -112,13 +111,13 @@ a{
 }
 
 h3{
-    background-color: darkorange;
+    /*background-color: darkorange;*/
     font-size: 30px;
     font-weight: lighter;
 }
 
 .result{
-    color: darkorange;
+    /*color: darkorange;*/
     font-weight: bolder;
     font-size: 20px;
 }
